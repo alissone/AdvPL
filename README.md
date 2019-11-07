@@ -16,5 +16,12 @@
     > ExArrIn: Exemplo do ArrIncl
 
     > ExModelo2: Modelo2
+
  - **ExemploTReport.prw**: Relatório com TReport simples a partir de Query SQL
  - **cBuildFil.prw**: Converter range em string para array numérico ou expressão SQL
+
+ ___
+
+# DBTrace Parser
+#### Aplicação criada em Python para extrair queries SQL de logs do DBTrace
+
