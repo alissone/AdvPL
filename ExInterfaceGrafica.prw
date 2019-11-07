@@ -3,7 +3,8 @@
 
 /*/{Protheus.doc} User Function ExConPad
 	Snippet de exemplo de consulta padrão em uma tabela do sistema,
-	a qual deve obrigatoriamente estar presente na SX3. Ao selecionar
+    a qual deve obrigatoriamente estar presente na SX3. Abre uma caixa de
+    pesquisa listando itens da tabela, com busca e filtros. Ao selecionar
 	uma opção, este posiciona automaticamente no registro que voce selecionou
 
 	@type User Function
