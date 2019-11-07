@@ -2,9 +2,14 @@
 
 #### Esse repositório contém funções e snippets úteis para facilitar a vida de analistas Protheus
 
+
+![Alt text](img/ExemploTempoRestante.png?raw=true "TempoRst.prw")
+
  - **TempoRst.prw**: Utilidade para cálculo de tempo restante em um loop ou query
  - **ExBarra.prw**: Exemplo da `TempoRst.prw` com barra de progresso `Processa()`
+
  - **ChkCompl**: Exemplo da função GetSrcArray para verificar se um determinado fonte está compilado no repositório atual
+
  - **ExInterfaceGrafica**: Exemplos de funções do sistema para interação com usuário por interface gráfica:
 
     > ExConPad: Consulta Padrão
@@ -25,3 +30,10 @@
 # DBTrace Parser
 #### Aplicação criada em Python para extrair queries SQL de logs do DBTrace
 
+![Alt text](img/ExtraçãoSQL_DBTrace.png?raw=true "Exemplo de SQL extraído pelo DBTrace Parser")
+
+Utilizada para rápida detecção de falhas na construção de queries SQL a partir do AdvPL,
+facilmente gerando um arquivo SQL para ser utilizado diretamente no banco de dados para
+debugging.
+
+Mais dicas sobre o assunto em: *https://tdn.totvs.com/display/framework/Desenvolvendo+queries+no+Protheus*
