@@ -7,7 +7,11 @@
  - **ChkCompl**: Exemplo da função GetSrcArray para verificar se um determinado fonte está compilado no repositório atual
  - **ExInterfaceGrafica**: Exemplos de funções do sistema para interação com usuário por interface gráfica:
     > ExConPad: Consulta Padrão
+
     > ExMbrw: MBrowse
+
     > ArrIncl: Marca elementos repetidos ao adicionar a um array
+
     > ExArrIn: Exemplo do ArrIncl
+
     > ExModelo2: Modelo2
