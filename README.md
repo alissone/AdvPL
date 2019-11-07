@@ -36,4 +36,11 @@ Utilizada para rápida detecção de falhas na construção de queries SQL a partir d
 facilmente gerando um arquivo SQL para ser utilizado diretamente no banco de dados para
 debugging.
 
+Para utilizá-lo, utilize a função **Rastrear** no DBMonitor:
+![Alt text](img/DBMonitor.png?raw=true "Exemplo de SQL extraído pelo DBTrace Parser")
+
+Depois, salve em um arquivo .TRC e abra com o DBTrace Parser.
+
 Mais dicas sobre o assunto em: *https://tdn.totvs.com/display/framework/Desenvolvendo+queries+no+Protheus*
+
+*Em breve o código fonte completo deste será incluso neste repositório.*
