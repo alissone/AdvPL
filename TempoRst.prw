@@ -1,14 +1,14 @@
 #Include "TOTVS.CH"
 
 /*/{Protheus.doc} User Function Tempo
-	Transforma milisegundos em hor·rio por extenso
+	Transforma milisegundos em hor√°rio por extenso
 
 	@type  Function
 	@author Alisson Amorim / alisson@email.com
 	@since 06/05/2019
 	@version 0.3
 	@param nMilis, N, Tempo em Milissegundos
-	@return cRes, C, DescriÁ„o por Extenso
+	@return cRes, C, Descri√ß√£o por Extenso
 	@example
 	nTmRest := 5400000  // 90 minutos
 	U_Tempo(nTmRest) => 1 hora e 30 minutos
@@ -109,7 +109,7 @@
 Return cRes
 
 Static Function MeterUpd(oDlg, oSay, oMeter, nStart, nCount, nTotal)
-	// oDlg   => Objeto de di·logo contendo o medidor
+	// oDlg   => Objeto de di√°logo contendo o medidor
 	// oSay   => Objeto de texto que exibe o tempo restante
 	// oMeter => Objeto Meter que exibe a barra de progresso
 
@@ -121,27 +121,27 @@ Static Function MeterUpd(oDlg, oSay, oMeter, nStart, nCount, nTotal)
 Return
 
 /*/{Protheus.doc} User Function TempoRst
-	Calcula o tempo restante de uma operaÁ„o
-	com base no tempo total decorrido, a iteraÁ„o
-	atual e a quantidade total de iteraÁıes
+	Calcula o tempo restante de uma opera√ß√£o
+	com base no tempo total decorrido, a itera√ß√£o
+	atual e a quantidade total de itera√ß√µes
 
 	@type  Function
 	@author Alisson Amorim / alisson@email.com
 	@since 06/05/2019
 	@version 0.2
-	@params nStart => Quando a funÁ„o pai inicia, coloque:
+	@params nStart => Quando a fun√ß√£o pai inicia, coloque:
 			          nStart := Seconds()
  			nCount => Item atual
  			nTotal => Total de itens
-	@return cRes, C, DescriÁ„o por Extenso
+	@return cRes, C, Descri√ß√£o por Extenso
 	@example IncProc(u_TempoRst(nStart,nCount,nTotal))
 
 	(*) Depende de U_Tempo
 
 	/*/
 
-User Function TempoRst(nStart,nCount,nTotal)
+Static Function TempoRst(nStart,nCount,nTotal)
 	nTmTot  := Seconds() - nStart
 	nTmIter := nTmTot / nCount
 	nTmRest := nTmIter * (nTotal - nCount)
-Return "Tempo restante: " + U_Tempo(nTmRest*1000)
+Return (cValToChar(NoRound((nCount*100)/(nTotal),0))+"% conclu√≠do                                                         "+"Tempo restante: " + U_Tempo(nTmRest*1000))
